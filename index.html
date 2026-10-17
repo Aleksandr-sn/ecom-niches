@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ніші для e-commerce</title>
+<meta name="description" content="Висновки зі 115 відео каналів Voodoo Ecom і Ярослава Рогача за рік: ніші, товари, алгоритм пошуку, постачальники, продажі, доставка і план на 12 тижнів для 5-10 годин на тиждень.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --paper:#ffffff; --ink:#1d1f24; --muted:#5d636e; --line:#e3ded3;
+  --accent:#0f7b6c; --accent-soft:#e2f2ef; --warn:#b4471f; --warn-soft:#fbe9e1;
+  --gold:#a8751a; --gold-soft:#f8efd9; --chip:#eef0f3;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161a; --paper:#1c1f25; --ink:#e9eaec; --muted:#a3a9b3; --line:#2d3139;
+    --accent:#4fc2ad; --accent-soft:#18322e; --warn:#f08a62; --warn-soft:#3a221a;
+    --gold:#e2b45a; --gold-soft:#352b17; --chip:#262a32;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14161a; --paper:#1c1f25; --ink:#e9eaec; --muted:#a3a9b3; --line:#2d3139;
+  --accent:#4fc2ad; --accent-soft:#18322e; --warn:#f08a62; --warn-soft:#3a221a;
+  --gold:#e2b45a; --gold-soft:#352b17; --chip:#262a32;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Manrope,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px}
+@media (max-width:900px){.wrap{grid-template-columns:minmax(0,1fr)} nav.toc{display:none}}
+header.hero{max-width:1180px;margin:0 auto;padding:56px 16px 24px}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:10px 0 14px;letter-spacing:-.02em}
+.lead{font-size:19px;color:var(--muted);max-width:760px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{background:var(--chip);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+nav.toc{position:sticky;top:20px;align-self:start;max-height:calc(100vh - 40px);overflow:auto;padding:8px 0 24px;font-size:14px}
+nav.toc a{display:block;color:var(--muted);text-decoration:none;padding:5px 10px;border-left:2px solid var(--line)}
+nav.toc a:hover{color:var(--ink);border-left-color:var(--accent)}
+main{min-width:0;padding-bottom:80px}
+section{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px 28px 22px;margin:0 0 22px}
+@media (max-width:600px){section{padding:20px 16px 14px;border-radius:14px}}
+h2{font-size:26px;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+h2 .num{color:var(--accent);margin-right:8px}
+h3{font-size:18px;margin:22px 0 8px}
+.sub{color:var(--muted);margin:0 0 16px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin:4px 0}
+.tbl{width:100%;overflow-x:auto;margin:6px 0 16px;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:620px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{background:var(--chip);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.03em}
+tr:last-child td{border-bottom:0}
+.callout{border-radius:12px;padding:14px 16px;margin:10px 0 16px;background:var(--accent-soft)}
+.callout.warn{background:var(--warn-soft)}
+.callout.gold{background:var(--gold-soft)}
+.callout b:first-child{display:block;margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:8px 0 16px}
+.card{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--bg)}
+.card h4{margin:0 0 6px;font-size:16px}
+.card .big{font-size:26px;font-weight:800;color:var(--accent);line-height:1.1;margin-bottom:4px}
+.card p{font-size:14.5px;color:var(--muted);margin:0}
+.ok{color:var(--accent);font-weight:700}
+.no{color:var(--warn);font-weight:700}
+.mid{color:var(--gold);font-weight:700}
+.insight{counter-increment:ins;position:relative;padding:12px 14px 12px 52px;border-bottom:1px solid var(--line)}
+.insight:last-child{border-bottom:0}
+.insight::before{content:counter(ins);position:absolute;left:10px;top:12px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:14px;display:grid;place-items:center}
+.insights{counter-reset:ins}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps>li{counter-increment:st;position:relative;padding:10px 0 10px 46px;border-bottom:1px dashed var(--line)}
+.steps>li:last-child{border-bottom:0}
+.steps>li::before{content:counter(st);position:absolute;left:0;top:10px;width:32px;height:32px;border-radius:10px;background:var(--gold-soft);color:var(--gold);font-weight:800;display:grid;place-items:center}
+small,.small{font-size:13px;color:var(--muted)}
+.src{font-size:12.5px;color:var(--muted);white-space:nowrap}
+footer{max-width:1180px;margin:0 auto;padding:0 16px 48px;color:var(--muted);font-size:13px}
+.theme-btn{position:fixed;right:14px;bottom:14px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:8px 12px;font:600 13px Manrope,sans-serif;cursor:pointer}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="kicker">Особисте дослідження · жовтень 2026</div>
+  <h1>Ніші для e-commerce у вільний час</h1>
+  <p class="lead">Висновки зі 115 відео двох YouTube-каналів за рік: що продається, як шукати нішу, де брати товар, як продавати й доставляти. Усе відфільтровано під профіль <b>5–10 годин на тиждень і малий бюджет</b>.</p>
+  <div class="meta">
+    <span class="chip">Ярослав Рогач (Etsy) — 48 відео</span>
+    <span class="chip">Voodoo Ecom (Shopify) — 67 відео</span>
+    <span class="chip">жовтень 2025 – жовтень 2026</span>
+  </div>
+</header>
+
+<div class="wrap">
+<nav class="toc" aria-label="Зміст">
+  <a href="#tldr">Коротко</a>
+  <a href="#insights">12 інсайтів</a>
+  <a href="#model">Яку модель обрати</a>
+  <a href="#niches">Ніші за частотою</a>
+  <a href="#avoid">Чого не брати</a>
+  <a href="#find">Алгоритм пошуку ніші</a>
+  <a href="#source">Де брати товар</a>
+  <a href="#sell">Як продавати</a>
+  <a href="#ship">Як доставляти</a>
+  <a href="#money">Гроші й економіка</a>
+  <a href="#plan">План на 12 тижнів</a>
+  <a href="#dont">Чого не робити</a>
+  <a href="#doubts">Суперечності й застереження</a>
+  <a href="#watch">Що подивитись</a>
+  <a href="#method">Як зроблено</a>
+</nav>
+
+<main>
+
+<section id="tldr">
+  <h2><span class="num">0</span>Коротко</h2>
+  <div class="callout">
+    <b>Рекомендація</b>
+    Стартувати на <b>Etsy з цифровими товарами</b>: патерни для рукоділля або редаговані шаблони в Canva для весіль і свят. Робити це у вузькій підніші, а не в широкій категорії. Shopify розглядати як другий крок, коли Etsy вже дає прибуток.
+  </div>
+  <div class="grid">
+    <div class="card"><div class="big">$50–100</div><h4>Старт на Etsy digital</h4><p>Реєстрація ~$15–19, Canva і AI-підписки. Склад, закупівля й доставка не потрібні.</p></div>
+    <div class="card"><div class="big">$1–2 тис.</div><h4>Старт на Shopify з рекламою</h4><p>3–5 тестів товарів по $100–200. Учні реально «зливали» $600–1500, поки не знаходили товар, що продається.</p></div>
+    <div class="card"><div class="big">1–8 тижнів</div><h4>До першого продажу</h4><p>Нормально і 2 місяці без продажів на перших 20 лістингах. Нішу не міняти після 2–3 тихих днів.</p></div>
+    <div class="card"><div class="big">$200–900/міс</div><h4>Реалістично до 3-го місяця</h4><p>Так виходило в digital-кейсах із ~1 год/день. Кейси на $20 тис.+ мали 2–12 год/день або команду.</p></div>
+  </div>
+  <p class="small">Усі цифри на сторінці — слова авторів і їхніх учнів або відкриті лічильники продажів Etsy. Ніхто їх не перевіряв. Обидва канали продають курси, тому показують найуспішніші кейси.</p>
+</section>
+
+<section id="insights">
+  <h2><span class="num">1</span>12 головних інсайтів</h2>
+  <p class="sub">Те, що повторюється в багатьох відео і найбільше впливає на рішення.</p>
+  <div class="insights">
+    <div class="insight"><b>Нові магазини — головний індикатор ніші.</b> Обидва канали шукають нішу через магазини віком 1–6 місяців із тисячами продажів, а не через старих лідерів. Старі продають за інерцією, нові показують, що попит є зараз. <span class="src">Рогач: 7 відео</span></div>
+    <div class="insight"><b>Спершу попит, потім смак.</b> Учениця, яка робила власні дизайни без перевірки, за 3 місяці продала на ~£1 000. Після переходу в нішу з топ-10 за попитом вона продала на ~$26 тис. за 4 місяці. <span class="src">Рогач: 6 відео</span></div>
+    <div class="insight"><b>Etsy дешевше за Shopify на старті — і є прямий тест.</b> Автор запустив ті самі товари в двох магазинах. Etsy за 2 місяці сам окупав рекламу, а Shopify після $1,3–1,5 тис. витрат досі був у мінусі. На Etsy ~70% трафіку органічний, на Shopify трафік треба купувати або знімати щодня.</div>
+    <div class="insight"><b>Весілля, вечірки й персоналізовані подарунки — найчастіша тема.</b> Вона згадується в 13 відео. Подарунки дають 35–40% продажів Etsy, а «подарунки з сенсом» (імʼя, дата, місце) ростуть на 12–15% за рік.</div>
+    <div class="insight"><b>Цифрові товари мають найвищу маржу, але ринок іде в демпінг.</b> Маржа — до 90%, без обробки замовлень. Водночас SVG, клипарт, базові планери й патерни по $1–2 насичені. Виграють вузькі підніші й набори (бандли), а не дешевизна.</div>
+    <div class="insight"><b>Бандли й «вхідний» товар підіймають чек.</b> Дешеві позиції працюють як приманка, а гроші дає набір з 10–100 файлів або товарів. Один магазин мокапів після бандлів виріс з $1,5–2 тис. до ~$7 тис. на місяць.</div>
+    <div class="insight"><b>Регулярність важить більше за обсяг.</b> Етсі «бачить роботу»: 5 лістингів на день у кейсах, але й «хоча б 1 на день у 90% днів» теж давало результат. Перші ~3 місяці новий магазин отримує буст від Etsy.</div>
+    <div class="insight"><b>Реальна маржа POD — 15–25%, а не обіцяні 30%.</b> Так виходило і в автора, і в учнів. У digital маржа 50–90%, у фізичного товару зі своїм постачальником — до 70–80% (за словами учениці).</div>
+    <div class="insight"><b>AI-фото на Etsy тепер шкодять.</b> З червня 2026 Etsy знижує трафік магазинам із повністю AI-фото й AI-людьми. Закон Нью-Йорка забороняє рекламу з AI-людьми, у ЄС буде маркування. Перше фото лістингу має бути реальним або з купленого реального мокапу.</div>
+    <div class="insight"><b>Масово редагувати старі лістинги не можна.</b> Будь-яка зміна тайтлу, фото чи тегів відправляє лістинг на переіндексацію і обвалює позиції. Нові лістинги робіть з тайтлом до 140 символів і мінімум 10 фото.</div>
+    <div class="insight"><b>На Shopify головне — математика, а не «віннер».</b> Ціна $40–150, маржа ≥50%, тоді на $5 тис. чистими вистачає ~4 продажів на день. Товари по $5–15 не окупають рекламу.</div>
+    <div class="insight"><b>У Voodoo близько 40% відео — без практики.</b> Це промо курсу, мотивація або влоги. Частина порад етично сумнівна: вигадані відгуки, копіювання чужих відео, приховування походження товару. Такі поради я відсіяв (див. розділ «Чого не робити»).</div>
+  </div>
+</section>
+
+<section id="model">
+  <h2><span class="num">2</span>Яку модель обрати</h2>
+  <p class="sub">Порівняння всіх моделей, які пропонують канали, під 5–10 год/тиждень.</p>
+  <div class="tbl"><table>
+    <tr><th>Модель</th><th>Старт</th><th>Час</th><th>Маржа</th><th>Під твій профіль</th></tr>
+    <tr><td><b>Etsy — цифрові товари</b> (патерни, шаблони Canva, PDF)</td><td>$50–100</td><td>1–3 год/день у кейсах, можна партіями у вихідні</td><td>50–90%</td><td class="ok">Так — найкращий старт</td></tr>
+    <tr><td><b>Etsy — друк на замовлення (POD)</b> (футболки, подушки, кружки, банери з іменами)</td><td>$50–200</td><td>2–4 год/день: клієнти, брак, пошта</td><td>15–25%</td><td class="mid">Другий крок</td></tr>
+    <tr><td><b>Etsy — фізичний товар від свого постачальника</b></td><td>$200+ на зразки</td><td>склад, пакування</td><td>до 70–80% (слова)</td><td class="mid">Лише з помічником</td></tr>
+    <tr><td><b>Shopify — органічний дропшипінг</b> (Reels/TikTok → магазин → AliExpress)</td><td>~$100</td><td>1–5 відео щодня × 2 тижні на тест</td><td>~50% з продажу</td><td class="no">Ні — щоденне знімання</td></tr>
+    <tr><td><b>Shopify — платний дропшипінг</b> (реклама Meta)</td><td>$1–2 тис.</td><td>2–3 год/день</td><td>20–35% чистими</td><td class="no">Ні — бюджет і платіжки</td></tr>
+    <tr><td><b>Shopify — Google Shopping</b> (сотні товарів, без відео)</td><td>не названо, клік ~$0,40</td><td>налаштування, сотні SKU</td><td>~25%</td><td class="mid">Пізніше — одне відео, мало доказів</td></tr>
+    <tr><td><b>Amazon FBA / Faire (опт)</b></td><td>$5–10 тис. на партію</td><td>—</td><td>5–25%</td><td class="no">Ні — для досвідчених</td></tr>
+  </table></div>
+  <div class="callout warn"><b>Платіжки для Shopify</b>Stripe, PayPal і Shopify Payments для українського ФОП чи ТОВ недоступні. Voodoo радить орендувати чужу платіжку через посередника (Westerbit, ~4%) — це сіра зона, ризик холдів і залежність від посередника. Позиція каналу за рік мінялась: Hutko → «українські шлюзи не підходять» → оренда. Ще одна причина починати з Etsy, де виплати йдуть через сам маркетплейс.</div>
+</section>
+
+<section id="niches">
+  <h2><span class="num">3</span>Ніші, які згадуються найчастіше</h2>
+  <p class="sub">Відсортовано за кількістю відео. Цифри — найкращі, які прозвучали.</p>
+
+  <h3>Etsy (канал Рогача)</h3>
+  <div class="tbl"><table>
+    <tr><th>Ніша</th><th>Тип</th><th>Відео</th><th>Найкращі цифри</th><th>Статус</th></tr>
+    <tr><td><b>Весілля, дівич-вечори, вечірки</b></td><td>POD / фізичне / digital</td><td>13</td><td>Магазин автора: ~$92 тис. за пів року, ~$4,5 тис. чистими за січень. Весільні аксесуари: ~$22 тис. за рік при «пів дня на тиждень» (з родиною). Замовлення по 10–30 шт.</td><td>вічна ніша з сезонними піками; конкуренція висока</td></tr>
+    <tr><td><b>Персоналізовані подарунки</b> (імʼя, дата, фото, координати)</td><td>POD</td><td>9</td><td>Персоналізований POD: 1 241 продаж і ~€25 тис. за березень, чек ~€29. Листівки POD: 4 100 за 5 міс і 7 700 за 4 міс.</td><td>росте</td></tr>
+    <tr><td><b>Для тварин</b> (портрети, фігурки за фото, memorial, Gotcha Day)</td><td>POD / digital</td><td>8</td><td>Подушка з фото собаки: 1 430 продажів на місяць. Фігурки тварин за фото: 5 800 за 9 міс.</td><td>росте, але очевидні pet-магазини вже переповнені → брати підніші</td></tr>
+    <tr><td><b>POD-одяг</b> (текстові футболки, світшоти)</td><td>POD</td><td>7</td><td>~$26 тис. за 4 міс. при маржі 17%; ~760 замовлень за 3 міс. по ~$7 чистими</td><td>широко й конкурентно</td></tr>
+    <tr><td><b>Товари для дому</b> (кружки, подушки, wall art, дерево з гравіюванням)</td><td>POD</td><td>6</td><td>Новий AI-магазин автора: 123 продажі і ~$3,3 тис. за перший місяць</td><td>росте</td></tr>
+    <tr><td><b>Цифрові патерни</b> (шиття, квілти, сумки, вʼязання, вишивка)</td><td>digital</td><td>6</td><td>Квілти: 2 800 за 4 міс на 3 товарах по $6,99. Сумки: 3 800 за 4 міс. Кейс Василя: ~1 470 продажів за 3 міс, маржа ~50%, ~1 год/день</td><td>росте в нових магазинах; ризик демпінгу</td></tr>
+    <tr><td><b>Шаблони Canva</b> (весільні таблички, запрошення, банери, graduation)</td><td>digital</td><td>5</td><td>Весільна табличка: 1 300 продажів за 5 міс на 14 товарах, чек $30–40. Graduation: 3 600 за 4 міс</td><td>стабільно; graduation — сезонно</td></tr>
+    <tr><td><b>Мокапи</b> (зображення для продавців POD)</td><td>digital</td><td>5</td><td>Магазин автора: $1,5–2 тис. → ~$7 тис./міс після бандлів</td><td>працює</td></tr>
+    <tr><td><b>Мікроніші під професію/хобі</b> (вчителі, медсестри, «кава + книжки»)</td><td>POD / digital</td><td>4</td><td>цифр немає; дешеві стікери як приманка, гроші — у товарах $20–40</td><td>порада автора</td></tr>
+    <tr><td><b>Інші мовні ринки</b> (німецькі PDF-завдання для дітей, переклад AI)</td><td>digital</td><td>1</td><td>3 500 продажів за 8 міс, чек ~$8, низька конкуренція</td><td>цікава ідея, мало даних</td></tr>
+    <tr><td><b>Тренди зі звіту Etsy 2026</b>: маджонг, солом'яні сумки, набори для вишивки, аксесуари для щоденників</td><td>змішані</td><td>1</td><td>лише % росту зі звіту Etsy</td><td>перевіряти самому</td></tr>
+  </table></div>
+
+  <h3>Shopify (канал Voodoo)</h3>
+  <div class="tbl"><table>
+    <tr><th>Ніша / товар</th><th>Відео</th><th>Закупка → продаж → чистими з продажу</th><th>Примітка</th></tr>
+    <tr><td><b>Для тварин</b> (басейн і ліжко для собак, GPS-нашийник, шліфувалка кігтів)</td><td>8</td><td>шліфувалка $9–11 → $35 → ~$25</td><td>найчастіша ніша каналу</td></tr>
+    <tr><td><b>Дім, кухня, гриль, сад</b></td><td>6+</td><td>щітка для гриля $37–45 → $75–102 → $37–60; таймер поливу $25 → $79</td><td>сезонне літо</td></tr>
+    <tr><td><b>Фітнес і здоров'я</b> (степер, пілатес, бандажі)</td><td>5</td><td>пілатес $57 → $139–150 → ~$44</td><td>весна-літо</td></tr>
+    <tr><td><b>Краса</b> (без хімії і «до/після»)</td><td>5</td><td>блиск $5–11 → $30–40</td><td>платіжки блокують хімію й нутра</td></tr>
+    <tr><td><b>DIY та інструменти</b></td><td>3</td><td>мийка високого тиску $32 → $119 → ~$49; заточувач свердел $4 → $30</td><td>канал радить DIY як перший старт</td></tr>
+    <tr><td><b>Для вагітних</b> (ремінь безпеки, подушки)</td><td>3</td><td>ремінь $12 → $36</td><td>тонка маржа; у розборі сторінка з вигаданими відгуками</td></tr>
+    <tr><td><b>Декоративне освітлення</b> (через Google Shopping)</td><td>1</td><td>люстра $150–180 → $399; лампа $130 → $368</td><td>«нудна вічна» ніша без відео</td></tr>
+    <tr><td><b>Для читачів</b> (лампи, тримачі, печатки для книг)</td><td>1</td><td>$7–23 → $25–40 → $15–20</td><td>органіка</td></tr>
+  </table></div>
+</section>
+
+<section id="avoid">
+  <h2><span class="num">4</span>Чого не брати</h2>
+  <div class="tbl"><table>
+    <tr><th>Що</th><th>Чому</th></tr>
+    <tr><td>SVG/PNG-дизайни, клипарт</td><td>перенасичення: AI і демпінг до центів</td></tr>
+    <tr><td>Базові планери, Lightroom-пресети, дитячі пазли, мило ручної роботи</td><td>попит упав або «скажена» конкуренція. Шанс лише у вузьких: ADHD-планери, шампуні-бари</td></tr>
+    <tr><td>Будь-що з брендами: Disney, Marvel, Star Wars, футболісти, BTS</td><td>правовласники отримують автосповіщення, далі видалення і блок магазину</td></tr>
+    <tr><td>Товари по $1–2 і демпінг</td><td>не окупають рекламу навіть при тисячах продажів</td></tr>
+    <tr><td>Таро, гадання, езотерика</td><td>Etsy і Facebook обмежують</td></tr>
+    <tr><td>Класичний дропшипінг на Etsy</td><td>блокують; дозволений лише POD через схвалених Etsy провайдерів</td></tr>
+    <tr><td>Одяг і аксесуари на Shopify з рекламою</td><td>новачок не виграє аукціон реклами</td></tr>
+    <tr><td>Хімічна косметика, схуднення, БАДи</td><td>блокують Facebook і платіжки</td></tr>
+    <tr><td>Магазин лише під один сезон</td><td>після свята продажі до нуля. Тримати ≥60–70% вічних товарів</td></tr>
+    <tr><td>Ручна робота, яку не можна масштабувати</td><td>час на одного клієнта «з'їдає» все</td></tr>
+  </table></div>
+</section>
+
+<section id="find">
+  <h2><span class="num">5</span>Алгоритм пошуку ніші</h2>
+  <p class="sub">Зібрано з методів обох каналів. ~6–8 годин — це один тиждень твого часу.</p>
+  <ol class="steps">
+    <li><b>Скласти 5–10 кандидатів.</b> Бери з таблиць вище, звіту трендів Etsy і свого досвіду: хобі, професія, мова. Вузько: не «весілля», а «весільні таблички для дому в Canva».</li>
+    <li><b>Знайти нові магазини.</b> На Etsy шукай магазини 1–6 місяців із 1 000+ продажів у кандидатах. Інструменти: eRank або Everbee (є безкоштовні тарифи), розширення Chrome з продажами. Рогач робить це промптом у Claude з розширенням для Chrome: ~5 хв замість тижня. Промпт має виключати бренди.</li>
+    <li><b>Перевірити попит.</b> Відкрий бестселер і додай у кошик: Etsy покаже, у скількох людей він у кошику. 20+ — хороший сигнал. Подивись видачу за запитом на 5 сторінок.</li>
+    <li><b>Перевірити конкуренцію.</b> Орієнтир: на 1 пошук — не більше ~10 лістингів (1:10). Приклад: ADHD-планер мав ~3 000 пошуків на 36 000 лістингів — це вже забагато.</li>
+    <li><b>Перевірити, звідки трафік.</b> Знайди назву магазину в Google, TikTok, Instagram. Якщо продажі тримаються на вірусних відео — повторити не вийде. Шукай магазини на органіці Etsy.</li>
+    <li><b>Купити 1 товар у лідера.</b> Для патерну чи шаблону: оцінити складність (можна попросити Claude) і зробити краще у своєму стилі, без копіювання. Для фізичного товару: подивитись адресу відправки й знайти виробника.</li>
+    <li><b>Перевірити торгові марки.</b> Trademarkia або скріншот у Claude з питанням «чи безпечно».</li>
+    <li><b>Обрати одну нішу.</b> Тримати її мінімум 2–3 місяці: обидва канали кажуть, що більшість кидає після 2–3 тихих тижнів.</li>
+  </ol>
+  <div class="callout gold"><b>Швидкі фільтри для Shopify (якщо колись туди)</b>Kalodata (TikTok Shop): продажі за 30 днів, виручка $1–10 тис., ціна $20–100. PiPiAds: реклама, яка крутиться найдовше. Google Keyword Planner + SimilarWeb: безкоштовний скринінг ніші для Google Shopping. Товар-кандидат — той, що повторюється в кількох магазинах із великими переглядами.</div>
+</section>
+
+<section id="source">
+  <h2><span class="num">6</span>Де брати товар і що потрібно</h2>
+  <div class="tbl"><table>
+    <tr><th>Модель</th><th>Що потрібно</th><th>Де брати</th><th>Ціна</th></tr>
+    <tr><td><b>Etsy digital</b></td><td>Самі файли: PDF-патерни, шаблони, мокапи. Обкладинки лістингів.</td><td>Canva Pro (шаблони, Claude підключається до Canva), ChatGPT/Claude (тексти, ідеї, патерни), Nano Banana (картинки для digital)</td><td>Canva ~$15–19/міс, AI ~$20/міс; разом ~$100 за перші 2 місяці</td></tr>
+    <tr><td><b>Etsy POD</b></td><td>Дизайни + реальні мокапи для першого фото</td><td>POD-провайдери, схвалені Etsy, з виробництвом у США (у Voodoo згадані Printify, Printful). Реальні мокапи купують на самому Etsy</td><td>мокапи ~$10–20; товар оплачується після замовлення клієнта</td></tr>
+    <tr><td><b>Etsy фізичний</b></td><td>Зразки від 2–3 постачальників, склад удома</td><td>Знайти через адресу відправки лідерів; замовити 1–3 зразки і лише потім партію 10–15 шт.</td><td>тест 10–15 шт., не тисячі</td></tr>
+    <tr><td><b>Shopify дропшипінг</b></td><td>Постачальник з автозамовленням</td><td>AliExpress через DSers (безкоштовно) — для старту. CJ Dropshipping — пошук за фото, обробка 1–3 дні, доставка в США 4–7 днів. Spocket, Zendrop — склади в США/ЄС. Агент у Китаї — лише після 5–10 продажів на день</td><td>фільтр постачальника: рейтинг 4,5+, від 150 замовлень, фотовідгуки</td></tr>
+  </table></div>
+  <p><b>Формула ціни для фізичного товару:</b> закупка з доставкою × 3–4 = ціна продажу. Приклад: закупка ~$11 з доставкою → продаж $30–40 → $20–30 з одиниці до реклами.</p>
+</section>
+
+<section id="sell">
+  <h2><span class="num">7</span>Як продавати</h2>
+  <h3>Запуск магазину на Etsy</h3>
+  <ul>
+    <li>Відкриття займає ~15 хв, компанія не потрібна. Реєстрація ~$15–19.</li>
+    <li>До відкриття підготуй ~40–50 лістингів, далі додавай регулярно. У кейсах — по 5 на день, під твій час реально 1–2 на день або 5–10 партією у вихідні.</li>
+    <li>Ціна на старті трохи нижча за конкурентів (наприклад $30 замість $40), далі підіймай. Знижку знімай по ~2% на тиждень, не стрибком.</li>
+    <li>Перші ~100 продажів можуть бути майже без прибутку — це набір відгуків і рейтингу.</li>
+  </ul>
+  <h3>Лістинг</h3>
+  <ul>
+    <li>Тайтл до 140 символів, з фразою «gift for …» і для кого товар (Etsy переходить на AI-пошук).</li>
+    <li>Мінімум 10 фото з 20 слотів: переваги, розміри, приклад використання. Перше фото — найсуворіше: без AI-людей і вигаданих сцен.</li>
+    <li>Опис — для кого і навіщо, а не лише характеристики.</li>
+    <li>Бандли: 10 → 20 → 50 → 100 файлів; «весь магазин» за фіксовану ціну. Дешевий товар — як приманка.</li>
+    <li>Платне подарункове пакування (+$5–10) у POD і фізичних товарах.</li>
+  </ul>
+  <h3>Реклама Etsy</h3>
+  <ul>
+    <li>Вмикати через ~2 тижні після старту (одна учениця чекала 1,5–2 міс індексації). Бюджет $10–25 на день, потім $30–40, якщо окупається.</li>
+    <li>Реклама має окупатися з продажів, а не з кишені. У нових магазинах автора 65–70% замовлень органічні, ROAS 2,18.</li>
+  </ul>
+  <h3>Знижки та кошики</h3>
+  <ul>
+    <li>З березня 2026 Etsy забороняє «вічні» знижки: одна акція триває не довше місяця. Автор змінює відсоток щотижня, хоча б на 1%. Оптимум у тестах: мокапи ~45%, одяг 30–50%.</li>
+    <li>Надсилай офери на покинуті кошики. У магазині автора було 282 кошики на ~$12 тис., а офер отримали лише 23 з них.</li>
+  </ul>
+  <h3>Сезони</h3>
+  <ul>
+    <li>Q4 найпростіший для нового магазину. Асортимент готуй за ~2 місяці, фізичні товари — щонайменше за 4 тижні до дати, digital можна до останнього дня.</li>
+    <li>Ключові дати 2026: День подяки 26.11, Чорна пʼятниця 27.11, Кіберпонеділок 30.11. Подарунки «в останній момент» купують з ~10.12. У Voodoo грудень утричі більший за вересень.</li>
+    <li>Літом — спад. Додавай літні товари (весілля, graduation, 4 липня, back-to-school), не вмикай vacation mode: краще збільшити час обробки.</li>
+  </ul>
+</section>
+
+<section id="ship">
+  <h2><span class="num">8</span>Як доставляти</h2>
+  <div class="tbl"><table>
+    <tr><th>Модель</th><th>Як іде товар</th><th>Що контролювати</th></tr>
+    <tr><td><b>Digital</b></td><td>Etsy сам віддає файл після оплати. Шаблон Canva — посиланням, клієнт редагує сам.</td><td>Інструкція в PDF, як відкрити й змінити шаблон. Швидка відповідь на питання (≤24 год).</td></tr>
+    <tr><td><b>POD</b></td><td>Замовлення автоматично йде провайдеру, він друкує й відправляє з США. ~80% покупців Etsy — зі США.</td><td>Реальний час обробки в shipping profile — інакше Etsy ріже трафік. Дедлайни доставки до свят у лістингу. Після доставки — повідомлення клієнту, щоб проблема прийшла в чат, а не в поганий відгук.</td></tr>
+    <tr><td><b>Фізичний свій</b></td><td>Склад удома, пакування. У США безкоштовні пакети USPS Priority, конверти UPS, коробки FedEx.</td><td>Брак у партіях — тримати 2–3 постачальників.</td></tr>
+    <tr><td><b>Shopify дропшипінг</b></td><td>DSers автоматично замовляє в постачальника на адресу клієнта. Трекінг — Parcel Panel (безкоштовно до 20 замовлень/міс). З Китаю 10–20 днів, склади США — 2–7.</td><td>Писати реальні терміни доставки. Повертати гроші самому, не доводити до чарджбеку — він б'є по платіжці.</td></tr>
+  </table></div>
+</section>
+
+<section id="money">
+  <h2><span class="num">9</span>Гроші й економіка</h2>
+  <div class="grid">
+    <div class="card"><div class="big">~11–12%</div><h4>Комісії Etsy</h4><p>Від суми продажу з доставкою, за розбором магазину автора з екрана.</p></div>
+    <div class="card"><div class="big">$2,6–7</div><h4>Чистими з одного продажу</h4><p>Digital і POD в учнів. У digital із чеком $5–7 — близько $4–5.</p></div>
+    <div class="card"><div class="big">2–4,6%</div><h4>Конверсія магазину Etsy</h4><p>У нових магазинах автора й учнів.</p></div>
+    <div class="card"><div class="big">~$5 тис./міс</div><h4>Коли наймати помічника</h4><p>Рогач: найм після ~$5–10 тис. доходу. Part-time помічник — $200–300/міс.</p></div>
+  </div>
+  <div class="tbl"><table>
+    <tr><th>Кейс</th><th>Модель</th><th>Час</th><th>Старт</th><th>Результат</th></tr>
+    <tr><td>Василь</td><td>digital-патерни</td><td>~1 год/день</td><td>до $70</td><td>~1 470 продажів, ~$4,4 тис. за 3 міс, маржа ~50%</td></tr>
+    <tr><td>Богдан і Олена</td><td>digital, чек $5–7</td><td>3–4 год/день</td><td>—</td><td>~$1,6 тис. за 30 днів, маржа ~80%</td></tr>
+    <tr><td>Аліна</td><td>digital-інструкції «зроби сам»</td><td>1–8 год/день</td><td>—</td><td>~1 700 продажів, ~$6,1 тис. за 4 міс</td></tr>
+    <tr><td>Алекса</td><td>весільні аксесуари</td><td>пів дня/тиждень + родина</td><td>—</td><td>~$22 тис. за рік, чек $25</td></tr>
+    <tr><td>Сергій</td><td>POD-футболки</td><td>~2 год/день</td><td>$0</td><td>~760 замовлень за 3 міс, ~$7 чистими з продажу</td></tr>
+    <tr><td>Катерина</td><td>шаблони запрошень + весільне</td><td>2–3 год/день</td><td>—</td><td>~$2,4 тис./міс за обидва магазини, понад рік</td></tr>
+  </table></div>
+  <div class="callout warn"><b>Звірити до старту</b>Чи можна відкрити Etsy-магазин і отримувати виплати з твоєї країни. У відео це суперечливо: в одному кажуть, що з Іспанії без SSN і адреси США неможливо, а учні з Іспанії, Бельгії, Франції, Польщі та Болгарії магазини відкрили. Перевірити на сайті Etsy в списку країн для продавців і в Etsy Payments.</div>
+</section>
+
+<section id="plan">
+  <h2><span class="num">10</span>План на 12 тижнів (6–8 год/тиждень)</h2>
+  <div class="tbl"><table>
+    <tr><th>Тижні</th><th>Що робити</th><th>Критерій «готово»</th></tr>
+    <tr><td>0</td><td>Звірити, чи можна продавати на Etsy з твоєї країни і як отримувати виплати.</td><td>є відповідь «так» і спосіб виплат</td></tr>
+    <tr><td>1</td><td>Алгоритм пошуку: 2–3 кандидати (патерни у вузькій підніші, шаблони Canva для свят, мовний ринок), 10–15 нових магазинів, кошики, бренди.</td><td>обрано 1 нішу, є таблиця з цифрами</td></tr>
+    <tr><td>2–3</td><td>Купити 1–2 товари лідерів. Зробити 20–25 своїх товарів у Canva/AI, реальні мокапи для першого фото. Тексти з «gift for».</td><td>25 готових лістингів у чернетках</td></tr>
+    <tr><td>4</td><td>Дотягнути до ~40 лістингів, відкрити магазин. Далі 1–2 лістинги на день або 5–10 у вихідні.</td><td>магазин відкрито, ритм тримається</td></tr>
+    <tr><td>5–6</td><td>Реклама Etsy $5–10/день через 2 тижні після старту. Перший бандл. Знижка на старті, щотижня інший відсоток.</td><td>перші продажі або видно кошики</td></tr>
+    <tr><td>7–9</td><td>Подивитись, що продається і що збирає кошики, — розширювати саме це. Бандли 10/20/50. Не міняти нішу через тихі дні.</td><td>3–5 товарів із продажами</td></tr>
+    <tr><td>10–12</td><td>Почистити лістинги без переглядів. Підняти ціни по ~2%/тиждень. Підготувати Q4 або наступний сезон за 2 місяці.</td><td>рішення: масштабувати, додати POD чи змінити підніші</td></tr>
+  </table></div>
+  <p class="small">Орієнтир за кейсами: перші продажі на 1–8 тижні, $200–900/міс до кінця 3-го місяця. Якщо за 3 місяці при 50+ лістингах немає продажів — змінити підніші, а не модель.</p>
+</section>
+
+<section id="dont">
+  <h2><span class="num">11</span>Чого не робити</h2>
+  <p class="sub">Частину цих порад канали давали прямо. Я їх не рекомендую: вони ведуть до бану, юридичних ризиків або обману покупців.</p>
+  <ul>
+    <li><span class="no">Вигадані або імпортовані відгуки</span> — з Amazon чи AliExpress «як свої», фейкові логотипи медіа й «експертів».</li>
+    <li><span class="no">Копіювати чужі відео й креативи</span> — у самому каналі за кілька чужих кадрів забанили рекламний акаунт Meta назавжди.</li>
+    <li><span class="no">Брехати про терміни доставки</span> — писати 5–7 днів, коли реально 14–28.</li>
+    <li><span class="no">Ховати походження товару</span> й видавати AliExpress за свій бренд.</li>
+    <li><span class="no">Мультиакаунти, антидетект-браузери, «спільні» доступи до сервісів</span> — порушують правила платформ.</li>
+    <li><span class="no">Повністю AI-фото з людьми на Etsy</span> — з червня 2026 падає трафік.</li>
+    <li><span class="no">Масово редагувати лістинги, що вже продаються</span>.</li>
+    <li><span class="no">Відкривати другий магазин на себе</span> — лише на члена сімʼї, інакше проти правил Etsy.</li>
+    <li><span class="no">Брати кредит чи борг на старт</span> — гроші мають бути власні.</li>
+  </ul>
+</section>
+
+<section id="doubts">
+  <h2><span class="num">12</span>Суперечності й застереження</h2>
+  <ul>
+    <li><b>Коли вмикати рекламу Etsy:</b> автор каже «через 2 тижні», учениця — «після 1,5–2 місяців індексації». Компроміс: через 2 тижні на мінімальному бюджеті.</li>
+    <li><b>Один магазин чи кілька:</b> автор радить 3 магазини (2 digital + 1 POD), учні кажуть, що фокус на одному дав би результат швидше. Під твій час — один.</li>
+    <li><b>Спершу попит чи низька конкуренція:</b> автор — попит, учні з Іспанії — низька конкуренція + перевірка новими магазинами. Алгоритм вище поєднує обидва.</li>
+    <li><b>AI-фото:</b> у кількох відео радять AI-візуали, а з червня 2026 Etsy за них ріже трафік. Новіше правило важливіше.</li>
+    <li><b>Маржа POD:</b> обіцяють 25–30%, на практиці виходить 15–20%.</li>
+    <li><b>Ніші в кейсах учнів майже ніколи не названі</b> — повторити кейс напряму неможливо.</li>
+    <li><b>Цифри «доходу з одного відео» у Voodoo</b> — розрахунок на припущених конверсіях (0,5% переглядів → клік, 2–2,5% → покупка), а не виміри.</li>
+    <li><b>Ефект відбору:</b> показують переможців потоку. Типове відео-конкурент у Voodoo набирає 20–30 тис. переглядів, а не мільйони.</li>
+  </ul>
+</section>
+
+<section id="watch">
+  <h2><span class="num">13</span>Що варто подивитись самому</h2>
+  <p class="sub">Найкорисніші відео під твій профіль, у порядку пріоритету.</p>
+  <h3>Etsy — Ярослав Рогач</h3>
+  <ol>
+    <li><a href="https://www.youtube.com/watch?v=A1u0Ce9mOXM" target="_blank" rel="noopener">Як нові Etsy-магазини набирають тисячі продажів</a> — метод пошуку через Claude і 11 ніш з цифрами</li>
+    <li><a href="https://www.youtube.com/watch?v=NKAibLUsW8g" target="_blank" rel="noopener">Що зараз продається на Etsy? Розбір нових магазинів</a> — 9 магазинів, шаблони Canva, патерни, антиприклад демпінгу</li>
+    <li><a href="https://www.youtube.com/watch?v=9U80tcsaPtU" target="_blank" rel="noopener">Як нові Etsy магазини набирають тисячі продажів так швидко?</a> — 15 ніш, перевірка через кошики</li>
+    <li><a href="https://www.youtube.com/watch?v=6tyOiluB4nQ" target="_blank" rel="noopener">1400 продажів за 3 місяці</a> — кейс найближчий до твого профілю (~1 год/день)</li>
+    <li><a href="https://www.youtube.com/watch?v=mP9nPRjOHNc" target="_blank" rel="noopener">План з $500 до $10 000/міс</a> — покроковий старт з бюджетом</li>
+    <li><a href="https://www.youtube.com/watch?v=RAWMfJWqME0" target="_blank" rel="noopener">Чому новачки обирають нішу неправильно</a> — три перевірки ніші, правило 1:10</li>
+    <li><a href="https://www.youtube.com/watch?v=wVJqbwpUOrg" target="_blank" rel="noopener">В яких цифрових товарах найбільше грошей</a> — бандли, конкретні лістинги з продажами</li>
+    <li><a href="https://www.youtube.com/watch?v=vcr0DKlGlRk" target="_blank" rel="noopener">Нові правила AI-контенту на Etsy</a> — що можна й не можна з AI</li>
+    <li><a href="https://www.youtube.com/watch?v=HiHqKpsntFI" target="_blank" rel="noopener">Etsy vs Shopify: 2 магазини з однаковими товарами</a></li>
+    <li><a href="https://www.youtube.com/watch?v=vmAHDsL6ExA" target="_blank" rel="noopener">$90 000 на Etsy за пів року</a> — єдиний повний фінансовий розбір магазину</li>
+    <li><a href="https://www.youtube.com/watch?v=FMym0VcuyKw" target="_blank" rel="noopener">Ніші, які помирають</a> — що не брати і чим замінити</li>
+    <li><a href="https://www.youtube.com/watch?v=sPgrJxAhE9I" target="_blank" rel="noopener">Q4 в e-commerce</a> — календар і вузькі ніші подарунків</li>
+  </ol>
+  <h3>Shopify — Voodoo Ecom (якщо дійде до другого кроку)</h3>
+  <ol>
+    <li><a href="https://www.youtube.com/watch?v=4TDdk6PnofA" target="_blank" rel="noopener">Як побудувати бізнес без команди в 2026</a> — 5 моделей для однієї людини</li>
+    <li><a href="https://www.youtube.com/watch?v=_ge61Qz3lGc" target="_blank" rel="noopener">Дропшипінг через Google Ads</a> — модель без відео, скринінг ніші безкоштовно</li>
+    <li><a href="https://www.youtube.com/watch?v=zR5IS9JFbzA" target="_blank" rel="noopener">Що продається на Shopify прямо зараз</a> — 3 товари з порахованою маржею</li>
+    <li><a href="https://www.youtube.com/watch?v=D3ESgDCBmHA" target="_blank" rel="noopener">Перший продаж за 3 дні, день 3</a> — пороги тесту (перші ~28 хв)</li>
+    <li><a href="https://www.youtube.com/watch?v=m8PE1sdsMRM" target="_blank" rel="noopener">Де брати клієнтів у 2026</a> — чесний рейтинг каналів трафіку</li>
+    <li><a href="https://www.youtube.com/watch?v=rxCocahTE4A" target="_blank" rel="noopener">Продав на $1,2 млн — історія студента</a> — реальна ціна тестів і бан за копіювання</li>
+  </ol>
+</section>
+
+<section id="method">
+  <h2><span class="num">14</span>Як зроблено</h2>
+  <ul>
+    <li>Відео не завантажувались. Тексти взято з розшифровок YouTube мовою оригіналу: 48 відео Рогача і 67 відео Voodoo за 17.10.2025–17.10.2026, тобто всі, де розшифровка була доступна.</li>
+    <li>Кожне відео законспектували окремо: короткі — модель Claude Haiku, довгі стріми — Claude Sonnet. Потім Sonnet звів конспекти в дайджест по кожному каналу: ніші, частота згадок, кейси, пороги, суперечності.</li>
+    <li>Висновки, вибір моделі, план і відсів сумнівних порад зробив Claude Opus.</li>
+    <li>Автосубтитри містять помилки в цифрах і назвах. Сумнівні місця в конспектах позначено, а на сторінку взято лише те, що повторюється або прозвучало чітко.</li>
+  </ul>
+</section>
+
+</main>
+</div>
+
+<footer>Особисте дослідження. Не фінансова порада. Цифри — зі слів авторів відео, без перевірки.</footer>
+<button class="theme-btn" type="button" id="themeBtn">Тема</button>
+<script>
+(function(){
+  var root=document.documentElement, key='ecom-theme';
+  try{var s=localStorage.getItem(key); if(s) root.setAttribute('data-theme',s);}catch(e){}
+  document.getElementById('themeBtn').addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    var next=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',next);
+    try{localStorage.setItem(key,next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
